@@ -1,5 +1,6 @@
 using EstateApi.AutoMapperProfile;
 using EstateApi.Handlers.QueryHandlers;
+using EstateApi.RetryPoliciesConfiguration;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -7,6 +8,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Secret3dParty.ApiClient;
+using Secret3dParty.ApiClient.Abstraction;
+using Secret3dParty.ApiClient.Configuration;
+using System;
 
 namespace EstateApi
 {
@@ -26,6 +31,17 @@ namespace EstateApi
 
             services.AddMediatR(typeof(GetTopActiveRealEstateAgentsQueryHandler).Assembly);
             services.AddAutoMapper(typeof(MapperProfile));
+
+            var options = Configuration.GetSection("ApiClientConfiguration")
+                                                    .Get<ApiClientConfiguration>();
+
+
+            services.AddHttpClient(ApiClientConfiguration.Secret3dPartyClientName, c =>
+            {
+                c.BaseAddress = new Uri($"{options.BaseUrl}/{options.ApiKey}/");
+            }).AddRetryPolicies();
+
+            services.AddTransient<ISecret3dPartyHttpClient, Secret3dPartyHttpClient>();
 
             services.AddSwaggerGen(c =>
             {
