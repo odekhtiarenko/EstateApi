@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstateApi", "EstateApi\EstateApi.csproj", "{F7926C44-B383-407C-BA6B-E9EFA3594758}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstateApi", "EstateApi\EstateApi.csproj", "{F7926C44-B383-407C-BA6B-E9EFA3594758}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{200A6DBF-0F0A-46FF-A5EA-61BF3BD280F1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{498E9B57-4F0F-4ED1-9096-111795512E6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstateApi.Api.Tests", "EstateApi.Api.Tests\EstateApi.Api.Tests.csproj", "{427C7214-F5CF-4FAA-8CB9-8B15ADFE3F49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstateApi.Api.Tests", "EstateApi.Api.Tests\EstateApi.Api.Tests.csproj", "{427C7214-F5CF-4FAA-8CB9-8B15ADFE3F49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstateApi.Handlers", "EstateApi.Handlers\EstateApi.Handlers.csproj", "{9D99839F-151C-47F4-B260-EAAF23FEC887}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstateApi.Handlers", "EstateApi.Handlers\EstateApi.Handlers.csproj", "{9D99839F-151C-47F4-B260-EAAF23FEC887}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstateApi.Data", "EstateApi.Data\EstateApi.Data.csproj", "{FD627B1E-CDD6-4340-97AB-F0EDEDDE6DFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstateApi.Data", "EstateApi.Data\EstateApi.Data.csproj", "{FD627B1E-CDD6-4340-97AB-F0EDEDDE6DFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstateApi.Handlers.Tests", "EstateApi.Handlers.Tests\EstateApi.Handlers.Tests.csproj", "{01629C08-796F-46B9-A2E5-3D846758D1F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstateApi.Handlers.Tests", "EstateApi.Handlers.Tests\EstateApi.Handlers.Tests.csproj", "{01629C08-796F-46B9-A2E5-3D846758D1F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Secret3dParty.ApiClient", "Secret3dParty.ApiClient\Secret3dParty.ApiClient.csproj", "{59411CC7-48A0-4BE0-889A-0B9A12DD7408}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Secret3dParty.ApiClient", "Secret3dParty.ApiClient\Secret3dParty.ApiClient.csproj", "{59411CC7-48A0-4BE0-889A-0B9A12DD7408}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstateApi.AcceptanceTest", "EstateApi.AcceptanceTest\EstateApi.AcceptanceTest.csproj", "{B634AAB9-CA7D-422F-8E7A-AB52D835E305}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{59411CC7-48A0-4BE0-889A-0B9A12DD7408}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59411CC7-48A0-4BE0-889A-0B9A12DD7408}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59411CC7-48A0-4BE0-889A-0B9A12DD7408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B634AAB9-CA7D-422F-8E7A-AB52D835E305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B634AAB9-CA7D-422F-8E7A-AB52D835E305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B634AAB9-CA7D-422F-8E7A-AB52D835E305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B634AAB9-CA7D-422F-8E7A-AB52D835E305}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{FD627B1E-CDD6-4340-97AB-F0EDEDDE6DFF} = {498E9B57-4F0F-4ED1-9096-111795512E6A}
 		{01629C08-796F-46B9-A2E5-3D846758D1F5} = {200A6DBF-0F0A-46FF-A5EA-61BF3BD280F1}
 		{59411CC7-48A0-4BE0-889A-0B9A12DD7408} = {498E9B57-4F0F-4ED1-9096-111795512E6A}
+		{B634AAB9-CA7D-422F-8E7A-AB52D835E305} = {200A6DBF-0F0A-46FF-A5EA-61BF3BD280F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D29CABD6-56BD-42D8-AF8F-7C24DA7683BF}
