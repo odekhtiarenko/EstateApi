@@ -44,7 +44,9 @@ namespace EstateApi.Handlers.QueryHandlers
                                           Address = x.Adres,
                                           OfferedSince = x.AangebodenSindsTekst
                                       })
-                                  });
+                                  })
+                            .OrderByDescending(x=>x.Properties.Count())
+                            .Take(10);
         }
     }
 }

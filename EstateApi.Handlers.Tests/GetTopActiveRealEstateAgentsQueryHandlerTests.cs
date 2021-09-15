@@ -7,6 +7,7 @@ using Moq;
 using Secret3dParty.ApiClient.Abstraction;
 using Secret3dParty.ApiClient.Contracts;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
@@ -41,6 +42,12 @@ namespace EstateApi.Handlers.Tests
 
             result.Should()
                 .BeAssignableTo<IEnumerable<RealEstateAgent>>();
+
+            for (int i = 0; i < result.Count()-1; i++)
+            {
+                result.ElementAt(i).Properties.Count().Should()
+                    .BeGreaterOrEqualTo(result.ElementAt(i+1).Properties.Count());
+            }
         }
     }
 }
