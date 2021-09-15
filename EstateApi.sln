@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstateApi.Data", "EstateApi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstateApi.Handlers.Tests", "EstateApi.Handlers.Tests\EstateApi.Handlers.Tests.csproj", "{01629C08-796F-46B9-A2E5-3D846758D1F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Secret3dParty.ApiClient", "Secret3dParty.ApiClient\Secret3dParty.ApiClient.csproj", "{59411CC7-48A0-4BE0-889A-0B9A12DD7408}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{01629C08-796F-46B9-A2E5-3D846758D1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01629C08-796F-46B9-A2E5-3D846758D1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01629C08-796F-46B9-A2E5-3D846758D1F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59411CC7-48A0-4BE0-889A-0B9A12DD7408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59411CC7-48A0-4BE0-889A-0B9A12DD7408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59411CC7-48A0-4BE0-889A-0B9A12DD7408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59411CC7-48A0-4BE0-889A-0B9A12DD7408}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{9D99839F-151C-47F4-B260-EAAF23FEC887} = {498E9B57-4F0F-4ED1-9096-111795512E6A}
 		{FD627B1E-CDD6-4340-97AB-F0EDEDDE6DFF} = {498E9B57-4F0F-4ED1-9096-111795512E6A}
 		{01629C08-796F-46B9-A2E5-3D846758D1F5} = {200A6DBF-0F0A-46FF-A5EA-61BF3BD280F1}
+		{59411CC7-48A0-4BE0-889A-0B9A12DD7408} = {498E9B57-4F0F-4ED1-9096-111795512E6A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D29CABD6-56BD-42D8-AF8F-7C24DA7683BF}

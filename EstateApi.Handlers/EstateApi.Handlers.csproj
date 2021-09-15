@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EstateApi.Data\EstateApi.Data.csproj" />
+    <ProjectReference Include="..\Secret3dParty.ApiClient\Secret3dParty.ApiClient.csproj" />
   </ItemGroup>
 
 </Project>
