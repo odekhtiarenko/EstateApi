@@ -29,13 +29,13 @@ namespace EstateApi.AcceptanceTest.Features
 
         private async Task Given_CallToTopRealEstateAgentsByLocation()
         {
-            var repsonse = await _httpClient.GetWithExpectedStatusCodeAsync("/api/RealEstateAgent/amsterdam/top-most-active", System.Net.HttpStatusCode.OK);
+            var repsonse = await _httpClient.GetWithExpectedStatusCodeAsync($"/api/RealEstateAgent/{_location}/top-most-active", System.Net.HttpStatusCode.OK);
             _topAgents = await repsonse.Content.DeserializeAsync<IEnumerable<RealEstateAgentStats>>();
         }
 
         private async Task Given_CallToTopRealEstateAgentsByLocationAndFilter()
         {
-            var repsonse = await _httpClient.GetWithExpectedStatusCodeAsync("/api/RealEstateAgent/amsterdam/top-most-active?filter=tuin", System.Net.HttpStatusCode.OK);
+            var repsonse = await _httpClient.GetWithExpectedStatusCodeAsync($"/api/RealEstateAgent/{_location}/top-most-active?filter={_filter}", System.Net.HttpStatusCode.OK);
             _topAgents = await repsonse.Content.DeserializeAsync<IEnumerable<RealEstateAgentStats>>();
         }
 
